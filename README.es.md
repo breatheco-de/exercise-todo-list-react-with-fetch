@@ -6,6 +6,8 @@ Para esta segunda parte, sincronizaremos nuestra lista de tareas con una base de
 
 🔗 Click aquí para acceder a la [documentación de la API del TODO-list ](http://assets.breatheco.de/apis/fake/todos/).
 
+👆[Aqui hay un video explicando como usar el TodoList API con Fetch.](https://www.youtube.com/watch?v=s6_-c0LFDRo)
+
 Todo este ejercicio se trata de la programación de asincrona porque las interacciones `from` y` to` del servidor deben realizarse de forma asíncrona. De esa manera, el usuario no tiene que esperar a que llegue la información.
 
 ## Instrucciones:
