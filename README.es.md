@@ -12,14 +12,14 @@ Todo este ejercicio se trata de la programación de asincrona porque las interac
 
 ## 🌱  Cómo iniciar este proyecto
 
-No clones este repositorio.
-
-
- El primer paso para comenzar a codificar es clonar el [react.js boilerplate](https://github.com/4GeeksAcademy/react-hello) en tu compjutador local o con Gitpod.
+No clones este repositorio. El primer paso para comenzar a codificar es clonar el [react.js boilerplate](https://github.com/4GeeksAcademy/react-hello) en tu compjutador local o con Gitpod.
 
 a) Si usas Gitpod (recomendada) puedes clonar el boilerplate [clic aquí](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello).
 
-b) Si trabajas localmente, escribe el siguiente comando en tu terminal: `git clone https://github.com/4GeeksAcademy/react-hello`.
+b) Si trabajas localmente, escribe el siguiente comando en tu terminal: 
+```sh
+$ git clone https://github.com/4GeeksAcademy/react-hello
+````
 
 💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
 
