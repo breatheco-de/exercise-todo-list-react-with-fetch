@@ -8,8 +8,6 @@ For this second part, we will sync our todo list with a real database, using the
 
 This whole exercise is about asynchronous programming because the interactions `from` and `to` the server need to be done async. That way the user does not have to wait for the information to arrive.
 
-REACT BOILERPLATE ENGLISH
-
 ## 🌱  How to start this project
 
 Do not clone this repository.
