@@ -38,7 +38,7 @@ Hay 3 momentos críticos en la línea de tiempo de la aplicación (denominado ti
 Utiliza la siguiente fetch call para sincronizar tus tareas con el servidor cada vez que haya un cambio en la lista.
 
 ```js
-fetch('http://assets.breatheco.de/apis/fake/todos/user/alesanchezr', {
+fetch('https://assets.breatheco.de/apis/fake/todos/user/alesanchezr', {
       method: "PUT",
       body: JSON.stringify(todos),
       headers: {
