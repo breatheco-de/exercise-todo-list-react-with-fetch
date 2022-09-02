@@ -12,5 +12,7 @@
 	"description" : "Create a simple todo web app using the React.js framework and use the API to sync with the server",
 	"talents": [
 		{ "badge": "tag-master", "points": 10 }
-	]
+	],
+    "autoPlay": false,
+    "projectType": "project"
 }
