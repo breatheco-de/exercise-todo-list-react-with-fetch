@@ -1,6 +1,6 @@
 # ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Segunda parte de la TODO List, agregando fetch
 
-Debes hacer este ejercicio después de la [aplicación de la TODO List](https://projects.breatheco.de/d/todo-list#readme) porque la primera parte es el boilerplate perfecto para comenzar a usar API's.
+Debes hacer este ejercicio después de la [aplicación de la TODO List](https://4geeks.com/interactive-coding-tutorial/junior/todo-list) porque la primera parte es el boilerplate perfecto para comenzar a usar API's.
 
 Para esta segunda parte, sincronizaremos nuestra lista de tareas con una base de datos real, usando la siguiente [RESTful](http://content.breatheco.de/lesson/understanding-rest-apis) y API pública realizada para este ejercicio.
 
