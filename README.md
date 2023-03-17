@@ -1,6 +1,6 @@
 # Second Part of the TODO list, adding fetch
 
-This exercise is meant to be completed after the [TODO list react application](https://4geeks.com/interactive-coding-tutorial/junior/todo-list) because the first part its the perfect boilerplate to start using API's.
+This exercise is meant to be completed after the [TODO list react application](https://4geeks.com/interactive-coding-tutorial/junior/todo-list) because the first part it's the perfect boilerplate to start using API's.
 
 For this second part, we will sync our todo list with a real database, using the following [RESTful](https://content.breatheco.de/lesson/understanding-rest-apis) and public API made for this exercise.
 
