@@ -1,4 +1,6 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Segunda parte de la TODO List, agregando fetch
+<!--hide-->
+# Segunda parte de la TODO List, agregando fetch
+<!--endhide-->
 
 Debes hacer este ejercicio después de la [aplicación de la TODO List](https://4geeks.com/interactive-coding-tutorial/junior/todo-list) porque la primera parte es el boilerplate perfecto para comenzar a usar API's.
 
@@ -8,11 +10,11 @@ Para esta segunda parte, sincronizaremos nuestra lista de tareas con una base de
 
 👆[Aqui hay un video explicando como usar el TodoList API con Fetch.](https://www.youtube.com/watch?v=s6_-c0LFDRo)
 
-Todo este ejercicio se trata de la programación de asincrona porque las interacciones `from` y` to` del servidor deben realizarse de forma asíncrona. De esa manera, el usuario no tiene que esperar a que llegue la información.
+Todo este ejercicio se trata de la programación de asíncrona porque las interacciones `from` y` to` del servidor deben realizarse de forma asíncrona. De esa manera, el usuario no tiene que esperar a que llegue la información.
 
 ## 🌱  Cómo iniciar este proyecto
 
-No clones este repositorio. El primer paso para comenzar a codificar es clonar el [react.js boilerplate](https://github.com/4GeeksAcademy/react-hello) en tu compjutador local o con Gitpod.
+No clones este repositorio. El primer paso para comenzar a codificar es clonar el [react.js boilerplate](https://github.com/4GeeksAcademy/react-hello) en tu comptutador local o con Gitpod.
 
 a) Si usas Gitpod (recomendada) puedes clonar el boilerplate [clic aquí](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello).
 

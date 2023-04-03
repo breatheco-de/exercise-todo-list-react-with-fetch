@@ -1,12 +1,14 @@
+<!--hide-->
 # Second Part of the TODO list, adding fetch
+<!--endhide-->
 
-This exercise is meant to be completed after the [TODO list react application](https://4geeks.com/interactive-coding-tutorial/junior/todo-list) because the first part its the perfect boilerplate to start using API's.
+This exercise is meant to be completed after the [TODO list react application](https://4geeks.com/interactive-coding-tutorial/junior/todo-list) because the first part is the perfect boilerplate to start using API's.
 
 For this second part, we will sync our todo list with a real database, using the following [RESTful](https://content.breatheco.de/lesson/understanding-rest-apis) and public API made for this exercise.
 
 🔗 Click here to access to the [TODO-list API documentation](http://assets.breatheco.de/apis/fake/todos/).
 
-This whole exercise is about asynchronous programming because the interactions `from` and `to` the server need to be done async. That way the user does not have to wait for the information to arrive.
+This whole exercise is about asynchronous programming because the interactions `from` and `to` the server need to be done async. That way, the user does not have to wait for the information to arrive.
 
 ## 🌱  How to start this project
 
@@ -16,7 +18,7 @@ The first step to start coding is cloning the [react boilerplate](https://github
 
 a) If using Gitpod you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello).
 
-b) If working locally type the following command from your command line: `$ git clone https://github.com/4GeeksAcademy/react-hello`.
+b) If working locally, type the following command from your command line: `$ git clone https://github.com/4GeeksAcademy/react-hello`.
 
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
@@ -50,7 +52,7 @@ fetch('https://assets.breatheco.de/apis/fake/todos/user/alesanchezr', {
         return resp.json(); // (returns promise) will try to parse the result as json as return a promise that you can .then for results
     })
     .then(data => {
-        //here is were your code should start after the fetch finishes
+        //here is where your code should start after the fetch finishes
         console.log(data); //this will print on the console the exact object received from the server
     })
     .catch(error => {
