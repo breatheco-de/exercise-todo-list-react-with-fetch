@@ -12,20 +12,23 @@ Para esta segunda parte, sincronizaremos nuestra lista de tareas con una base de
 
 Todo este ejercicio se trata de la programación de asíncrona porque las interacciones `from` y` to` del servidor deben realizarse de forma asíncrona. De esa manera, el usuario no tiene que esperar a que llegue la información.
 
-## 🌱  Cómo iniciar este proyecto
+## 🌱 Cómo comenzar este proyecto
 
-No clones este repositorio. El primer paso para comenzar a codificar es clonar el [react.js boilerplate](https://github.com/4GeeksAcademy/react-hello) en tu comptutador local o con Gitpod.
+No clones este repositorio porque vamos a usar una plantilla diferente.
 
-a) Si usas Gitpod (recomendada) puedes clonar el boilerplate [clic aquí](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello).
+Recomendamos abrir el `react boilerplate` usando una herramienta de aprovisionamiento como [Codespaces](https://4geeks.com/es/lesson/tutorial-de-github-codespaces) (recomendado) o [Gitpod](https://4geeks.com/es/lesson/como-utilizar-gitpod). Alternativamente, puedes clonarlo en tu computadora local usando el comando `git clone`.
 
-b) Si trabajas localmente, escribe el siguiente comando en tu terminal: 
-```sh
-$ git clone https://github.com/4GeeksAcademy/react-hello
-````
+Este es el repositorio que necesitas abrir o clonar:
 
-💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
+```
+https://github.com/4GeeksAcademy/react-hello
+```
 
-## Instrucciones:
+**👉 Por favor sigue estos pasos** [cómo comenzar un proyecto de codificación](https://4geeks.com/es/lesson/como-comenzar-un-proyecto-de-codificacion).
+
+💡 Importante: Recuerda guardar y subir tu código a GitHub creando un nuevo repositorio, actualizando el remoto (`git remote set-url origin <your new url>`) y subiendo el código a tu nuevo repositorio usando los comandos `add`, `commit` y `push` desde la terminal de git.
+
+## 📝 Instrucciones:
 
 - Haz que tu TODO List se sincronice con la API de backend cada vez que se agregue o elimine una tarea.
 - Agregue un botón de limpieza de todas las tareas que eliminará toda la lista del servidor y actualizará la lista vacía en el front-end.
@@ -35,7 +38,7 @@ Hay 3 momentos críticos en la línea de tiempo de la aplicación (denominado ti
 - **Cuando se agrega una nueva tarea**: debes PONER (PUT) la nueva lista en el servidor.
 - **Cuando se elimina una tarea**: Debes PONER (PUT) la nueva lista en el servidor.
 
-## Pista
+## 💡 Pista
 
 Utiliza la siguiente fetch call para sincronizar tus tareas con el servidor cada vez que haya un cambio en la lista.
 
@@ -64,3 +67,5 @@ fetch('https://assets.breatheco.de/apis/fake/todos/user/alesanchezr', {
 ```
 
 Para cualquier otra solicitud, debes seguir cambiando las variables en el fetch:El URL, el método y el payload (carga útil).
+
+Este y otros proyectos son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Curso de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
