@@ -1,6 +1,6 @@
-<!--hide-->
+<!-- hide -->
 # Segunda parte de la TODO List, agregando fetch
-<!--endhide-->
+<!-- endhide -->
 
 Debes hacer este ejercicio después de la [aplicación de la TODO List](https://4geeks.com/interactive-coding-tutorial/junior/todo-list) porque la primera parte es el boilerplate perfecto para comenzar a usar API's.
 
