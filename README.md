@@ -6,7 +6,7 @@ This exercise is meant to be completed after the [TODO list react application](h
 
 For this second part, we will sync our todo list with a real database, using the following [RESTful](https://content.breatheco.de/lesson/understanding-rest-apis) and public API made for this exercise.
 
-🔗 Click here to access to the [TODO-list API documentation](http://assets.breatheco.de/apis/fake/todos/).
+🔗 Click here to access to the [TODO-list API documentation](https://playground.4geeks.com/apis/fake/todos/).
 
 This whole exercise is about asynchronous programming because the interactions `from` and `to` the server need to be done async. That way, the user does not have to wait for the information to arrive.
 
@@ -42,7 +42,7 @@ There are 3 critical moments in the application timeline (a.k.a. The runtime) to
 Use the following fetch call to synchronize your tasks with the server every time there is a change on the list.
 
 ```js
-fetch('https://assets.breatheco.de/apis/fake/todos/user/alesanchezr', {
+fetch('https://playground.4geeks.com/apis/fake/todos/alesanchezr', {
       method: "PUT",
       body: JSON.stringify(todos),
       headers: {
