@@ -2,15 +2,15 @@
 # Second Part of the TODO list, adding fetch
 <!-- endhide -->
 
-This exercise is meant to be completed after the [TODO list react application](https://4geeks.com/interactive-coding-tutorial/junior/todo-list) because the first part is the perfect boilerplate to start using API's.
+This exercise is meant to be completed after the [TODO list React application](https://4geeks.com/interactive-coding-tutorial/todo-list) because the first part is the perfect boilerplate to start using API's.
 
-For this second part, we will sync our todo list with a real database, using the following [RESTful](https://4geeks.com/lesson/understanding-rest-apis) and public API made for this exercise.
+For this second part, we will sync our to-do list with a real database, using the following [RESTful](https://4geeks.com/lesson/understanding-rest-apis) and public API made for this exercise.
 
 🔗 Click here to access to the [TODO-list API documentation](https://playground.4geeks.com/apis/fake/todos/).
 
-This whole exercise is about asynchronous programming because the interactions `from` and `to` the server need to be done async. That way, the user does not have to wait for the information to arrive.
+This whole exercise is about asynchronous programming because the interactions *from* and *to* the server need to be done async. That way, the user does not have to wait for the information to arrive.
 
-## 🌱  How to start this project
+## 🌱 How to start this project
 
 Do not clone this repository because we are going to be using a different template.
 
@@ -18,14 +18,13 @@ We recommend opening the `react boilerplate` using a provisioning tool like [Cod
 
 This is the repository you need to open or clone:
 
-```
+```text
 https://github.com/4GeeksAcademy/react-hello
 ```
 
 **👉 Please follow these steps on** [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-project).
 
-
-💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.
+> 💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.
 
 ## 📝 Instructions:
 
@@ -33,11 +32,11 @@ https://github.com/4GeeksAcademy/react-hello
 - Add a clean all tasks button that will delete the entire list from the server and update the empty list on the front-end.
 
 There are 3 critical moments in the application timeline (a.k.a. The runtime) to focus on your integration:
-- **After the list loads empty for the first time (componentDidMount)**: you should fetch (GET) the data from the API and update the tasks when the information finally arrives.
+- **After the list loads empty for the first time (useEffect)**: you should fetch (GET) the data from the API and update the tasks when the information finally arrives.
 - **When a new task is added**: You should PUT the new list on the server.
 - **When a task is deleted**: You should PUT the new list on the server.
 
-## 💡 Hint
+## 💡 Hint:
 
 Use the following fetch call to synchronize your tasks with the server every time there is a change on the list.
 
@@ -50,17 +49,17 @@ fetch('https://playground.4geeks.com/apis/fake/todos/user/alesanchezr', {
       }
     })
     .then(resp => {
-        console.log(resp.ok); // will be true if the response is successfull
-        console.log(resp.status); // the status code = 200 or code = 400 etc.
-        console.log(resp.text()); // will try return the exact result as string
-        return resp.json(); // (returns promise) will try to parse the result as json as return a promise that you can .then for results
+        console.log(resp.ok); // Will be true if the response is successful
+        console.log(resp.status); // The status code=200 or code=400 etc.
+        console.log(resp.text()); // Will try to return the exact result as a string
+        return resp.json(); // (returns promise) Will try to parse the result as JSON and return a promise that you can .then for results
     })
     .then(data => {
-        //here is where your code should start after the fetch finishes
-        console.log(data); //this will print on the console the exact object received from the server
+        // Here is where your code should start after the fetch finishes
+        console.log(data); // This will print on the console the exact object received from the server
     })
     .catch(error => {
-        //error handling
+        // Error handling
         console.log(error);
     });
 ```
