@@ -32,7 +32,7 @@ https://github.com/4GeeksAcademy/react-hello
 - Add a clean all tasks button that will delete the entire list from the server and update the empty list on the front-end.
 
 There are 3 critical moments in the application timeline (a.k.a. The runtime) to focus on your integration:
-- **After the list loads empty for the first time (useEffect)**: you should fetch (GET) the data from the API and update the tasks when the information finally arrives.
+- **After the list loads empty for the first time (useEffect)**: You should fetch (GET) the data from the API and update the tasks when the information finally arrives.
 - **When a new task is added**: You should PUT the new list on the server.
 - **When a task is deleted**: You should PUT the new list on the server.
 
