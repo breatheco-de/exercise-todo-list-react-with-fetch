@@ -6,7 +6,7 @@ This exercise is meant to be completed after the [TODO list React application](h
 
 For this second part, we will sync our to-do list with a real database, using the following [RESTful](https://4geeks.com/lesson/understanding-rest-apis) and public API made for this exercise.
 
-🔗 Click here to access to the [TODO-list API documentation](https://playground.4geeks.com/apis/fake/todos/).
+🔗 Click here to access to the [TODO-list API documentation](https://playground.4geeks.com/todo/docs)).
 
 This whole exercise is about asynchronous programming because the interactions *from* and *to* the server need to be done async. That way, the user does not have to wait for the information to arrive.
 
