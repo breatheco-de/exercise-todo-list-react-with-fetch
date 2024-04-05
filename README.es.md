@@ -6,7 +6,7 @@ Debes hacer este ejercicio después de la [aplicación de la TODO list con React
 
 Para esta segunda parte, sincronizaremos nuestra lista de tareas con una base de datos real, usando la siguiente [RESTful](https://4geeks.com/es/lesson/understanding-rest-apis-es) y API pública realizada para este ejercicio.
 
-🔗 Clic aquí para acceder a la [documentación de la API del TODO-list](https://playground.4geeks.com/apis/fake/todos/).
+🔗 Clic aquí para acceder a la [documentación de la API del TODO-list](https://playground.4geeks.com/todo/docs).
 
 👉 [Aqui hay un video explicando como usar el TODO-List API con Fetch](https://www.youtube.com/watch?v=s6_-c0LFDRo).
 
@@ -43,7 +43,7 @@ Hay 3 momentos críticos en la línea de tiempo de la aplicación (denominado ti
 Utiliza el siguiente fetch call para sincronizar tus tareas con el servidor cada vez que haya un cambio en la lista.
 
 ```js
-fetch('https://playground.4geeks.com/apis/fake/todos/user/alesanchezr', {
+fetch('https://playground.4geeks.com/todo/user/alesanchezr', {
       method: "PUT",
       body: JSON.stringify(todos),
       headers: {
