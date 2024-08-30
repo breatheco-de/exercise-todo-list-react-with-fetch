@@ -35,8 +35,8 @@ https://github.com/4GeeksAcademy/react-hello
 
 Hay 3 momentos críticos en la línea de tiempo de la aplicación (denominado tiempo de ejecución) para centrarse en su integración:
 - **Después de que la lista se carga vacía por primera vez (useEffect)**: Debes obtener (GET) los datos de la API y actualizar las tareas cuando la información finalmente llegue.
-- **Cuando se agrega una nueva tarea**: Debes PONER (PUT) la nueva lista en el servidor.
-- **Cuando se elimina una tarea**: Debes PONER (PUT) la nueva lista en el servidor.
+- **Cuando se agrega una nueva tarea**: Debes PONER (POST) la nueva lista en el servidor.
+- **Cuando se elimina una tarea**: Debes PONER (DELETE) la nueva lista en el servidor.
 
 ## 💡 Pista:
 
