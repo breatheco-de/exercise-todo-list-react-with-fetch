@@ -5,6 +5,7 @@
 	"solution": "https://bitbucket.org/codingacademy/todo-list",
 	"difficulty": "beginner",
 	"duration" : 8,
+	"template_url": "https://github.com/4GeeksAcademy/react-hello",
 	"preview": "https://github.com/breatheco-de/exercise-todo-list-react-with-fetch/blob/master/thumb.png?raw=true",
 	"syntax": "react.js",
 	"technologies": ["react.js", "fetch-api", "api"],
