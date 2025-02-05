@@ -1,5 +1,7 @@
 <!-- hide -->
+
 # Second Part of the TODO list, adding fetch
+
 <!-- endhide -->
 
 This exercise is meant to be completed after the [TODO list React application](https://4geeks.com/interactive-coding-tutorial/todo-list) because the first part is the perfect boilerplate to start using API's.
