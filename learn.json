@@ -1,5 +1,9 @@
 {
-	"title" : "Todolist Application Using React and Fetch",
+	"gitpod": true,
+	"title" : {
+    "us": "Todolist Application Using React and Fetch",
+    "es": "Aplicación de Todolist usando React y Fetch"
+},
 	"slug" : "todo-list-react-with-fetch",
 	"status": "published",
 	"solution": "https://bitbucket.org/codingacademy/todo-list",
@@ -10,10 +14,16 @@
 	"syntax": "react.js",
 	"technologies": ["react.js", "fetch-api", "api"],
 	"translations": ["es", "us"],
-	"description" : "Create a simple todo web app using the React.js framework and use the API to sync with the server",
+	"description" : {
+    "us": "Build a TODO web app with React.js while learning API integration, state management, and asynchronous requests. Develop skills in handling GET, POST, and PUT requests, working with useEffect for data fetching, and synchronizing a frontend with a backend.",
+    "es": "Crea una aplicación de lista de tareas (TODO) con React.js mientras aprendes integración de API, gestión de estado y solicitudes asíncronas. Desarrolla habilidades en el manejo de solicitudes GET, POST y PUT, el uso de useEffect para la obtención de datos y la sincronización de un frontend con un backend."
+},
 	"talents": [
 		{ "badge": "tag-master", "points": 10 }
 	],
     "autoPlay": false,
-    "projectType": "project"
+    "projectType": "project",
+    "telemetry": {
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id=205"
+}
 }

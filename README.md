@@ -42,19 +42,19 @@ There are 3 critical moments in the application timeline (a.k.a. The runtime) to
 
 ## 💡 Hint:
 
-Use the following fetch call to synchronize your tasks with the server every time there is a change on the list:
+Use the following fetch call to create a new task on the server. Remember to first create a new user. 
 
 ```js
-fetch('https://playground.4geeks.com/todo/user/alesanchezr', {
-      method: "PUT",
-      body: JSON.stringify(todos),
+fetch('https://playground.4geeks.com/todo/todos/alesanchezr', {
+      method: "POST",
+      body: JSON.stringify(todo),
       headers: {
         "Content-Type": "application/json"
       }
     })
     .then(resp => {
         console.log(resp.ok); // Will be true if the response is successful
-        console.log(resp.status); // The status code=200 or code=400 etc.
+        console.log(resp.status); // The status code=201 or code=400 etc.
         console.log(resp.text()); // Will try to return the exact result as a string
         return resp.json(); // (returns promise) Will try to parse the result as JSON and return a promise that you can .then for results
     })

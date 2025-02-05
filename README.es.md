@@ -44,19 +44,19 @@ Hay 3 momentos críticos en la línea de tiempo de la aplicación (denominado ti
 
 ## 💡 Pista:
 
-Utiliza el siguiente fetch call para sincronizar tus tareas con el servidor cada vez que haya un cambio en la lista.
+Utiliza el siguiente fetch call para crear una nueva tarea en el servidor. Recuerda crearte un usuario primero. 
 
 ```js
-fetch('https://playground.4geeks.com/todo/user/alesanchezr', {
-      method: "PUT",
-      body: JSON.stringify(todos),
+fetch('https://playground.4geeks.com/todo/todos/alesanchezr', {
+      method: "POST",
+      body: JSON.stringify(todo),
       headers: {
         "Content-Type": "application/json"
       }
     })
     .then(resp => {
         console.log(resp.ok); // Será true si la respuesta es exitosa
-        console.log(resp.status); // El código de estado 200, 300, 400, etc.
+        console.log(resp.status); // El código de estado 201, 300, 400, etc.
         console.log(resp.text()); // Intentará devolver el resultado exacto como string
         return resp.json(); // Intentará parsear el resultado a JSON y retornará una promesa donde puedes usar .then para seguir con la lógica
     })
