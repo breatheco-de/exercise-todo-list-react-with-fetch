@@ -12,6 +12,8 @@ Para esta segunda parte, sincronizaremos nuestra lista de tareas con una base de
 
 Todo este ejercicio se trata de la programación asíncrona porque las interacciones *desde* y *hacia* el servidor deben realizarse de forma asíncrona. De esa manera, el usuario no tiene que esperar a que llegue la información.
 
+<onlyfor saas="false" withBanner="false">
+      
 ## 🌱 Cómo comenzar este proyecto
 
 No clones este repositorio porque vamos a usar una plantilla diferente.
@@ -28,6 +30,8 @@ https://github.com/4GeeksAcademy/react-hello
 
 > 💡 Importante: Recuerda guardar y subir tu código a GitHub creando un nuevo repositorio, actualizando el remoto (`git remote set-url origin <your new url>`) y subiendo el código a tu nuevo repositorio usando los comandos `add`, `commit` y `push` desde la terminal de git.
 
+</onlyfor>
+
 ## 📝 Instrucciones:
 
 1. Haz que tu TODO List se sincronice con la API de backend cada vez que se agregue o elimine una tarea.
@@ -39,12 +43,10 @@ https://github.com/4GeeksAcademy/react-hello
    - Usa el método `GET` especificado en la documentación **para obtener la lista** y actualiza el estado que guarda la lista de tareas.
 
 4. Agregar una tarea.
-   - Usa el método `POST` especificado en la documentación **para añadir una nueva tarea**.
-   - Luego, usa GET para actualizar la lista de tareas.
+   - Usa el método `POST` especificado en la documentación **para añadir una nueva tarea** y luego, usa `GET` para actualizar la lista de tareas.
 
 5. Eliminar una tarea
    - Usa el método `DELETE` **para eliminar una tarea** y luego `GET` para actualizar la lista.
-
 
 6. Asegúrate de crear un usuario antes de añadir tareas.
 

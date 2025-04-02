@@ -1,5 +1,7 @@
 <!-- hide -->
+
 # Second Part of the TODO list, adding fetch
+
 <!-- endhide -->
 
 This exercise is meant to be completed after the [TODO list React application](https://4geeks.com/interactive-coding-tutorial/todo-list) because the first part is the perfect boilerplate to start using API's.
@@ -10,6 +12,8 @@ For this second part, we will sync our to-do list with a real database, using th
 
 This whole exercise is about asynchronous programming because the interactions *from* and *to* the server need to be done async. That way, the user does not have to wait for the information to arrive.
 
+<onlyfor saas="false" withBanner="false">
+      
 ## 🌱 How to start this project
 
 Do not clone this repository because we are going to be using a different template.
@@ -26,6 +30,8 @@ https://github.com/4GeeksAcademy/react-hello
 
 > 💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.
 
+</onlyfor>
+
 ## 📝 Instructions:
 
 1. Make your TODO List sync with the backend API every time a task is added or deleted.
@@ -37,8 +43,7 @@ https://github.com/4GeeksAcademy/react-hello
     - Use the `GET` method specified in the documentation **to fetch the list** and update the state that holds the task list.
 
 4. Add a task.
-    - Use the `POST` method specified in the documentation **to add a new task**.
-    - Then, use `GET` to update the task list.
+    - Use the `POST` method specified in the documentation **to add a new task** and then use `GET` to update the task list.
 
 5. Delete a task.
     - Use the `DELETE` method **to remove a task** and then `GET` to update the list.
