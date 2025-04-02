@@ -4,7 +4,7 @@
 
 Debes hacer este ejercicio después de la [aplicación de la TODO list con React](https://4geeks.com/es/interactive-coding-tutorial/todo-list-es) porque la primera parte es el boilerplate perfecto para comenzar a usar APIs.
 
-Para esta segunda parte, sincronizaremos nuestra lista de tareas con una base de datos real, usando la siguiente [RESTful](https://4geeks.com/es/lesson/understanding-rest-apis-es) y API pública realizada para este ejercicio.
+Para esta segunda parte, sincronizaremos nuestra lista de tareas con una base de datos real, usando la siguiente [API RESTful](https://4geeks.com/es/lesson/understanding-rest-apis-es) y API pública realizada para este ejercicio.
 
 🔗 Clic aquí para acceder a la [documentación de la API del TODO-list](https://playground.4geeks.com/todo/docs).
 
