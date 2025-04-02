@@ -28,42 +28,50 @@ https://github.com/4GeeksAcademy/react-hello
 
 ## 📝 Instructions:
 
-- Make your to-do list sync with the backend API every time a task is added or deleted.
-- Add a clean all tasks button that will `DELETE` the user from the server and empty the todo list on the front-end.
+1. Make your TODO List sync with the backend API every time a task is added or deleted.
+2. Add a "clear all tasks" button that will delete the entire list from the server and update the empty list on the front-end.
 
-There are 3 critical moments in the application timeline (a.k.a. The runtime) to focus on while integrating this API:
-- **After the list loads empty for the first time (`useEffect`)**: You should fetch (`GET`) the data from the API and update the tasks when the information finally arrives.
-- **When a new task is added**: You should `PUT` the new list on the server.
-- **When a task is removed**: You should `PUT` the new list on the server.
+**👉 Key moments for integration:**
+
+3. Load tasks on start (`useEffect`)
+    - Use the `GET` method specified in the documentation **to fetch the list** and update the state that holds the task list.
+
+4. Add a task.
+    - Use the `POST` method specified in the documentation **to add a new task**.
+    - Then, use `GET` to update the task list.
+
+5. Delete a task.
+    - Use the `DELETE` method **to remove a task** and then `GET` to update the list.
+
+6. Make sure to create a user before adding tasks.
 
 ## 💡 Hint:
 
-Use the following fetch call to create a new task on the server. Remember to first create a new user. 
+Use the following fetch call to create a new task on the server. Remember to create a user first.
 
 ```js
 fetch('https://playground.4geeks.com/todo/todos/alesanchezr', {
-      method: "POST",
-      body: JSON.stringify(todo),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
-    .then(resp => {
-        console.log(resp.ok); // Will be true if the response is successful
-        console.log(resp.status); // The status code=201 or code=400 etc.
-        console.log(resp.text()); // Will try to return the exact result as a string
-        return resp.json(); // (returns promise) Will try to parse the result as JSON and return a promise that you can .then for results
-    })
-    .then(data => {
-        // Here is where your code should start after the fetch finishes
-        console.log(data); // This will print on the console the exact object received from the server
-    })
-    .catch(error => {
-        // Error handling
-        console.error(error);
-    });
+        method: "POST",
+        body: JSON.stringify(task),
+        headers: {
+          "Content-Type": "application/json"
+        }
+     })
+     .then(resp => {
+          console.log(resp.ok); // Will be true if the response is successful
+          console.log(resp.status); // Status code 201, 300, 400, etc.
+          return resp.json(); // Will attempt to parse the result to JSON and return a promise where you can use .then to continue the logic
+     })
+     .then(data => {
+          // This is where your code should start after the fetch is complete
+          console.log(data); // This will print the exact object received from the server to the console
+     })
+     .catch(error => {
+          // Error handling
+          console.log(error);
+     });
 ```
 
-For any other request, you have to keep changing the same variables on the fetch: The URL, the method and the payload.
+> ⚠️ For any other request, you must change the variables in the fetch: **The URL, the method, and the payload**.
 
 This and many other projects are built by students as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).

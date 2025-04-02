@@ -30,13 +30,23 @@ https://github.com/4GeeksAcademy/react-hello
 
 ## 📝 Instrucciones:
 
-- Haz que tu TODO List se sincronice con la API de backend cada vez que se agregue o elimine una tarea.
-- Agregue un botón de limpieza de todas las tareas que eliminará toda la lista del servidor y actualizará la lista vacía en el front-end.
+1. Haz que tu TODO List se sincronice con la API de backend cada vez que se agregue o elimine una tarea.
+2. Agregue un botón de limpieza de todas las tareas que eliminará toda la lista del servidor y actualizará la lista vacía en el front-end.
 
-Hay 3 momentos críticos en la línea de tiempo de la aplicación (denominado tiempo de ejecución) para centrarse en su integración:
-- **Después de que la lista se carga vacía por primera vez (useEffect)**: Debes obtener (GET) los datos de la API y actualizar las tareas cuando la información finalmente llegue.
-- **Cuando se agrega una nueva tarea**: Debes PONER (PUT) la nueva lista en el servidor.
-- **Cuando se elimina una tarea**: Debes PONER (PUT) la nueva lista en el servidor.
+**👉 Momentos clave para la integración:**
+ 
+3. Cargar tareas al iniciar (`useEffect`)
+   - Usa el método `GET` especificado en la documentación **para obtener la lista** y actualiza el estado que guarda la lista de tareas.
+
+4. Agregar una tarea.
+   - Usa el método `POST` especificado en la documentación **para añadir una nueva tarea**.
+   - Luego, usa GET para actualizar la lista de tareas.
+
+5. Eliminar una tarea
+   - Usa el método `DELETE` **para eliminar una tarea** y luego `GET` para actualizar la lista.
+
+
+6. Asegúrate de crear un usuario antes de añadir tareas.
 
 ## 💡 Pista:
 
@@ -45,7 +55,7 @@ Utiliza el siguiente fetch call para crear una nueva tarea en el servidor. Recue
 ```js
 fetch('https://playground.4geeks.com/todo/todos/alesanchezr', {
       method: "POST",
-      body: JSON.stringify(todo),
+      body: JSON.stringify(task),
       headers: {
         "Content-Type": "application/json"
       }
@@ -53,7 +63,6 @@ fetch('https://playground.4geeks.com/todo/todos/alesanchezr', {
     .then(resp => {
         console.log(resp.ok); // Será true si la respuesta es exitosa
         console.log(resp.status); // El código de estado 201, 300, 400, etc.
-        console.log(resp.text()); // Intentará devolver el resultado exacto como string
         return resp.json(); // Intentará parsear el resultado a JSON y retornará una promesa donde puedes usar .then para seguir con la lógica
     })
     .then(data => {
@@ -66,6 +75,6 @@ fetch('https://playground.4geeks.com/todo/todos/alesanchezr', {
     });
 ```
 
-Para cualquier otra solicitud, debes cambiar las variables en el fetch: La URL, el método y el payload.
+> ⚠️ Para cualquier otra solicitud, debes cambiar las variables en el fetch: **La URL, el método y el payload**.
 
 Este y otros proyectos son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Cursos de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
