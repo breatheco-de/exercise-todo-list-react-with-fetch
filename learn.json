@@ -1,29 +1,39 @@
 {
 	"gitpod": true,
-	"title" : {
-    "us": "Todolist Application Using React and Fetch",
-    "es": "Aplicación de Todolist usando React y Fetch"
-},
-	"slug" : "todo-list-react-with-fetch",
+	"title": {
+		"us": "Todolist Application Using React and Fetch",
+		"es": "Aplicación de Todolist usando React y Fetch"
+	},
+	"slug": "todo-list-react-with-fetch",
 	"status": "published",
 	"solution": "https://bitbucket.org/codingacademy/todo-list",
 	"difficulty": "beginner",
-	"duration" : 8,
-	"template_url": "https://github.com/4GeeksAcademy/react-hello",
+	"duration": 8,
+	"template_url" : "https://github.com/4GeeksAcademy/react-hello",
 	"preview": "https://github.com/breatheco-de/exercise-todo-list-react-with-fetch/blob/master/thumb.png?raw=true",
 	"syntax": "react.js",
-	"technologies": ["react.js", "fetch-api", "api"],
-	"translations": ["es", "us"],
-	"description" : {
-    "us": "Build a TODO web app with React.js while learning API integration, state management, and asynchronous requests. Develop skills in handling GET, POST, and PUT requests, working with useEffect for data fetching, and synchronizing a frontend with a backend.",
-    "es": "Crea una aplicación de lista de tareas (TODO) con React.js mientras aprendes integración de API, gestión de estado y solicitudes asíncronas. Desarrolla habilidades en el manejo de solicitudes GET, POST y PUT, el uso de useEffect para la obtención de datos y la sincronización de un frontend con un backend."
-},
-	"talents": [
-		{ "badge": "tag-master", "points": 10 }
+	"technologies": [
+		"react.js",
+		"fetch-api",
+		"api"
 	],
-    "autoPlay": false,
-    "projectType": "project",
-    "telemetry": {
-    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id=205"
-}
+	"translations": [
+		"es",
+		"us"
+	],
+	"description": {
+		"us": "Build a TODO web app with React.js while learning API integration, state management, and asynchronous requests. Develop skills in handling GET, POST, and PUT requests, working with useEffect for data fetching, and synchronizing a frontend with a backend.",
+		"es": "Crea una aplicación de lista de tareas (TODO) con React.js mientras aprendes integración de API, gestión de estado y solicitudes asíncronas. Desarrolla habilidades en el manejo de solicitudes GET, POST y PUT, el uso de useEffect para la obtención de datos y la sincronización de un frontend con un backend."
+	},
+	"talents": [
+		{
+			"badge": "tag-master",
+			"points": 10
+		}
+	],
+	"autoPlay": false,
+	"projectType": "project",
+	"telemetry": {
+		"batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id=205"
+	}
 }
